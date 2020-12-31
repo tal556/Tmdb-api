@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #25425c;
+   
+}
+input{
+    outline: none;
+}
+#mainH1{
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#mainDiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin: 10px;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #d9e631;
+    outline: none;
+    border: none;
+}
+img{ 
+    border-radius: 10px;
+}
