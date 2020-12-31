@@ -34,7 +34,7 @@ async function searchOnclick() {
         .then(() => {
             for (const iterator of resultApi.results) {
                 // mainDiv1.innerHTML += `<div>${iterator.overview}</div>`
-                mainDiv1.innerHTML += `<div><img src="${imageApi}${iterator.backdrop_path}" alt="" onmouseover=""></div>`
+                mainDiv1.innerHTML += `<div><h3>${iterator.title}</h3><img src="${imageApi}${iterator.backdrop_path}" alt="" onmouseover=""></div>`
 
             }
         }
