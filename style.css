@@ -6,10 +6,12 @@
 
 body{
     background-color: #25425c;
+    color: #ffffff;
    
 }
 input{
-    outline: none;
+    /* outline: none; */
+    border-radius: 5px;
 }
 #mainH1{
     margin-bottom: 20px;
@@ -32,4 +34,15 @@ input{
 }
 img{ 
     border-radius: 10px;
+}
+
+#mainDiv1 div img:hover{
+    transform: rotateY(180deg)
+}
+#btn:hover{
+    background-color: #dae631bd;
+}
+#vid-container{
+    height: 500px;
+    width: 500px;
 }

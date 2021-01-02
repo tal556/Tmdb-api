@@ -4,6 +4,8 @@
 
 let api = "https://api.themoviedb.org/3/search/movie?api_key=a514e5022db69ea43b78a8355cc43719&query="
 let imageApi = "https://image.tmdb.org/t/p/w400/"
+let youtube = "https://www.youtube.com/watch?v="
+
 let resultApi
 function getApi(inputValue) {
     return fetch(`${api}${inputValue}`)
@@ -29,12 +31,16 @@ async function printApi(getValue) {
 }
 
 
-async function searchOnclick() {
+async function search() {
     await printApi(searchInput.value)
         .then(() => {
             for (const iterator of resultApi.results) {
+                if (iterator.backdrop_path != null){
+                    mainDiv1.innerHTML += `<div><h3>${iterator.title} <br>rating: ${iterator.vote_average}</h3><img src="${imageApi}${iterator.backdrop_path}" alt="" onmouseover=""></div>`
+
+
+                }
                 // mainDiv1.innerHTML += `<div>${iterator.overview}</div>`
-                mainDiv1.innerHTML += `<div><h3>${iterator.title}</h3><img src="${imageApi}${iterator.backdrop_path}" alt="" onmouseover=""></div>`
 
             }
         }
@@ -46,6 +52,16 @@ async function searchOnclick() {
 }
 
 
+//use button when push enter in the keyboard
+let inputEnter = document.getElementById('searchInput')
 
+inputEnter.addEventListener('keyup',event=>{
+    if(event.key === 'Enter'){
+        // event.preventDefault()
+        document.getElementById('btn').click()
+        console.log(event);
+        inputEnter.value = null
+    }
+})
 
 
