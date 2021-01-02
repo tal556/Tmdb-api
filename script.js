@@ -46,8 +46,8 @@ async function search() {
         }
         )
 
-    console.log(resultApi);
-    console.log(searchInput.value);
+    // console.log(resultApi);
+    // console.log(searchInput.value);
 
 }
 
