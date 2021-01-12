@@ -58,7 +58,7 @@ async function getVideoId(arg) {
         .catch(err => console.log(err))
         console.log(keyOfYoutube);
         mainDiv1.innerHTML +=
-        `<div><h3>${arg.title} <br>rating: ${arg.vote_average}</h3><a href="${youtubeApi}${keyOfYoutube}" target="_blank">yotube</a><img src="${imageApi}${arg.backdrop_path}" alt="" onmouseover=""></div>`
+        `<div><h3>${arg.title} <br>rating: ${arg.vote_average}</h3><div><a href="${youtubeApi}${keyOfYoutube}" target="_blank">Trailer</a></div><img src="${imageApi}${arg.backdrop_path}" alt="" onmouseover=""></div>`
 
 }
 
