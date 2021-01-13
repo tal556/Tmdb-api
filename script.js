@@ -19,9 +19,9 @@ function getApi(inputValue) {
 
 let getMainDiv = document.getElementById('mainDiv1')
 
-async function printApi(getValue) {
+async function getApiObjects(getValue) {
     try {
-        mainDiv1.innerHTML = '<img src="/3.gif" alt="loading gif" style = "width:230px ; height:170px;" >'
+        mainDiv1.innerHTML = '<img src="3.gif" alt="loading gif" style = "width:230px ; height:170px;" >'
         await getApi(getValue).then(res => resultApi = res).catch(err => console.log(err));
     }
     catch (err) {
@@ -35,7 +35,7 @@ async function printApi(getValue) {
 }
 
 async function search() {
-    await printApi(searchInput.value)
+    await getApiObjects(searchInput.value)
         .then(() => {
             for (const iterator of resultApi.results) {
                 if (iterator.backdrop_path != null) {
