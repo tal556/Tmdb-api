@@ -5,12 +5,12 @@
 }
 
 body{
-    background-color: #25425c;
-    color: #ffffff;
+    background-color: #1F374D;
+    color: #FFD700;
    
 }
 a{
-    color: #d9e631;
+    color: #FFD700;
     text-decoration: none;
 }
 input{
@@ -19,7 +19,7 @@ input{
 }
 #mainH1{
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #FFD700;
 }
 
 #mainDiv1 {
@@ -51,8 +51,7 @@ input{
     width: 100px;
     height: 30px;
     border-radius: 5px;
-    background-color: #d9e631;
-    outline: none;
+    background-color: #FFD700;
     border: none;
 }
 img{ 
@@ -63,7 +62,7 @@ img{
     transform: rotateY(180deg)
 }
 #btn:hover{
-    background-color: #dae631bd;
+    background-color: #FFD700;
 }
 #vid-container{
     height: 500px;

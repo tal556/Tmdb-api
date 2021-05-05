@@ -81,4 +81,47 @@ inputEnter.addEventListener('keyup', event => {
     }
 })
 
+// const INVENTORY = [{
+//     brand: 'Škoda',
+//     models: [{
+//       name: 'Fabia',
+//       years: [2011, 2012, 2013]
+//     }, {
+//       name: 'Kamiq',
+//       years: [2019, 2020, 2021]
+//     }]
+//   }, {
+//     brand: 'Toyota',
+//     models: [{
+//       name: 'Corolla',
+//       years: [2011, 2013]
+//     }, {
+//       name: 'Prius',
+//       years: [2019, 2020, 2021]
+//     }]
+//   }, {
+//     brand: 'Nissan',
+//     models: [{
+//       name: 'Micra',
+//       years: [2011]
+//     }, {
+//       name: 'GTR',
+//       years: [2019]
+//     }]
+//   }]
+
+// function findCarsByYear(yearOfTheCar){
+//     let reult =  INVENTORY.find((yearOfTheCar) => {
+//        let YearsArrey =   yearOfTheCar["models"]["years"]
+//        for(let i = 0 ; i<YearsArrey.length ; i++){
+//         YearsArrey[i]
+
+
+//        }
+
+//     })
+//     console.log(reult);
+
+
+// }
 
